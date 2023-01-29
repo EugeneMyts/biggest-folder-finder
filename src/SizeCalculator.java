@@ -31,6 +31,8 @@ public class SizeCalculator {
         char sizeFactor = size
                 .replaceAll("[0-9\\s+]+", "")
                 .charAt(0);
+
+        
         int mulptiplier = char2mulptiplier.get(sizeFactor);
         long length = mulptiplier * Long.valueOf(size.replaceAll("[^0-9]", ""));
 
